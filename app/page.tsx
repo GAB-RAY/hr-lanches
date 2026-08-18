@@ -230,7 +230,9 @@ export default function Home() {
         </div>
 
         <div className="categoria">
-          <h3>Doces</h3>
+          <h3>
+            Doces <span className="categoria-complemento">(São rotacionados na semana)</span>
+          </h3>
           <p className="observacao">Bolos e doces são vendidos em potes, exceto a Torta de Limão.</p>
           <div className="grade-produtos">{doces.map((produto) => <ProdutoCard key={produto.nome} produto={produto} />)}</div>
           <p className="lista-simples">Demais doces em pote: {docesSemFoto.join("; ")} - R$ 10,00 cada.</p>
