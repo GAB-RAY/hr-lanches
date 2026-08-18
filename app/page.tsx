@@ -194,6 +194,10 @@ export default function Home() {
           <BotaoWhatsApp mensagem={mensagens.promocao} destaque>
             Quero essa promoção
           </BotaoWhatsApp>
+          <p className="promocao-inclusos">
+            <span aria-hidden="true">→</span>
+            Orégano, cebola, guardanapos, molhos em sachê e cortes personalizados inclusos!
+          </p>
         </div>
       </section>
 

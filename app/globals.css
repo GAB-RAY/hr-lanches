@@ -447,6 +447,25 @@ footer img {
   text-transform: uppercase;
 }
 
+.promocao .promocao-inclusos {
+  align-items: flex-start;
+  color: #d9d9df;
+  display: flex;
+  font-size: 0.95rem;
+  font-weight: 700;
+  gap: 10px;
+  line-height: 1.45;
+  margin: 18px 0 0;
+}
+
+.promocao-inclusos span {
+  color: var(--vermelho);
+  flex: 0 0 auto;
+  font-size: 1.35rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
 .promocao-poster {
   background:
     linear-gradient(var(--preto), var(--preto)) padding-box,
