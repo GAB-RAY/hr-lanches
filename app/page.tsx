@@ -29,7 +29,6 @@ const beneficios = [
   "🍕 Pizza de 30cm",
   "🥤 Coca-Cola gelada",
   "🍰 Bolo de pote",
-  "🔥 Promoções diárias",
   "⚡ Entrega na Vila Kennedy",
   "📍 Bangu, Rio de Janeiro"
 ];
