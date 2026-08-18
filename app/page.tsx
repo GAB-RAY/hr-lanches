@@ -186,11 +186,11 @@ export default function Home() {
         </div>
         <div>
           <p className="etiqueta">Promoção oficial</p>
-          <h2>A cada 3 pizzas, ganhe 1 refrigerante Convenção.</h2>
-          <p>
-            Escolha Guaraná ou Abacaxi. A promoção é cumulativa: 3 pizzas = 1
-            refrigerante; 6 pizzas = 2; 9 pizzas = 3.
+          <h2>A cada 3 pizzas, ganhe 1 refrigerante Convenção</h2>
+          <p className="promocao-progressao">
+            6 pizzas = 2 refrigerantes Convenção; 9 pizzas = 3 refrigerantes Convenção.
           </p>
+          <p>Escolha Guaraná ou Abacaxi.</p>
           <BotaoWhatsApp mensagem={mensagens.promocao} destaque>
             Quero essa promoção
           </BotaoWhatsApp>

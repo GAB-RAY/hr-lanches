@@ -436,6 +436,17 @@ footer img {
   max-width: 720px;
 }
 
+.promocao .promocao-progressao {
+  color: var(--vermelho);
+  font-family: var(--font-oswald), Arial, sans-serif;
+  font-size: clamp(1.6rem, 3vw, 2.5rem);
+  font-weight: 900;
+  line-height: 1.05;
+  margin: 18px 0;
+  max-width: 980px;
+  text-transform: uppercase;
+}
+
 .promocao-poster {
   background:
     linear-gradient(var(--preto), var(--preto)) padding-box,
