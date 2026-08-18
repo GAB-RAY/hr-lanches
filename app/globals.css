@@ -245,7 +245,7 @@ footer img {
   color: var(--branco);
   display: grid;
   gap: clamp(28px, 5vw, 60px);
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 760px);
   min-height: calc(100vh - 132px);
   padding: clamp(44px, 7vw, 92px) clamp(18px, 5vw, 72px);
 }
@@ -352,65 +352,6 @@ footer img {
 .hero-metricas span {
   color: #a8a8b0;
   font-family: var(--font-oswald), Arial, sans-serif;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-.hero-arte {
-  align-items: center;
-  display: grid;
-  justify-items: center;
-  min-height: 460px;
-  min-width: 0;
-  position: relative;
-}
-
-.quadro-girando {
-  align-items: center;
-  animation: giro-suave 16s linear infinite;
-  aspect-ratio: 1;
-  background:
-    linear-gradient(var(--preto), var(--preto)) padding-box,
-    repeating-conic-gradient(from 0deg, var(--vermelho) 0deg 10deg, #000 10deg 20deg) border-box;
-  border: 16px solid transparent;
-  display: grid;
-  justify-items: center;
-  max-width: min(360px, 72vw);
-  padding: 20px;
-  width: 100%;
-}
-
-.quadro-interno {
-  align-items: center;
-  animation: giro-contra 16s linear infinite;
-  border: 1px solid rgba(224, 24, 24, 0.46);
-  display: grid;
-  gap: 10px;
-  height: 100%;
-  justify-items: center;
-  padding: 24px;
-  text-align: center;
-  width: 100%;
-}
-
-.quadro-interno img {
-  border-radius: 8px;
-  height: auto;
-  max-width: 70%;
-}
-
-.quadro-interno strong {
-  color: var(--vermelho);
-  font-family: var(--font-oswald), Arial, sans-serif;
-  font-size: clamp(2rem, 4vw, 3.2rem);
-  line-height: 0.9;
-  text-transform: uppercase;
-}
-
-.quadro-interno span {
-  color: #d7d7dc;
-  font-family: var(--font-oswald), Arial, sans-serif;
-  font-size: 1rem;
   font-weight: 900;
   text-transform: uppercase;
 }
@@ -866,10 +807,6 @@ footer svg {
     min-height: auto;
   }
 
-  .hero-arte {
-    margin-top: 24px;
-  }
-
   .telefone-cardapio {
     margin-top: 18px;
     position: static;
@@ -995,15 +932,6 @@ footer svg {
     box-shadow: 10px 10px 0 var(--vermelho);
   }
 
-  .hero-arte {
-    min-height: 300px;
-  }
-
-  .quadro-girando {
-    border-width: 11px;
-    max-width: min(290px, 84vw);
-  }
-
   .pizza-flutuante {
     max-width: 122px;
     right: 8px;
@@ -1111,10 +1039,6 @@ footer svg {
     scroll-behavior: auto;
   }
 
-  .quadro-girando,
-  .quadro-interno {
-    animation: none;
-  }
 }
 
 @keyframes letreiro {
@@ -1134,25 +1058,5 @@ footer svg {
 
   to {
     background-position: 20px 0, 20px 10px, 30px -10px, 10px 0;
-  }
-}
-
-@keyframes giro-suave {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes giro-contra {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(-360deg);
   }
 }

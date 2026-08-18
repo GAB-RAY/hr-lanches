@@ -177,15 +177,6 @@ export default function Home() {
             <span>🍕 Pizza 30cm</span>
           </div>
         </div>
-        <div className="hero-arte" aria-label="Identidade visual HR Lanches">
-          <div className="quadro-girando">
-            <div className="quadro-interno">
-              <Image src="/images/logo.jpeg" alt="Logo HR Lanches" width={210} height={210} priority />
-              <strong>HR Lanches</strong>
-              <span>Pizza, salgado e bolo de pote</span>
-            </div>
-          </div>
-        </div>
       </section>
 
       <div className="faixa-xadrez" aria-hidden="true" />
