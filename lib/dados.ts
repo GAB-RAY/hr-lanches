@@ -43,16 +43,12 @@ export const pizzas = [
   {
     nome: "Calabresa",
     preco: "R$ 25,00",
-    imagem: "/images/pizza-calabresa-premium.png",
-    gerada: true,
-    nota: "Imagem inspirada na foto real"
+    imagem: "/images/pizza-frango-catupiry.jpeg"
   },
   {
     nome: "Muçarela",
     preco: "R$ 25,00",
-    imagem: "/images/pizza-mucarela-premium.png",
-    gerada: true,
-    nota: "Imagem inspirada na foto real"
+    imagem: "/images/pizza-frango-cheddar.jpeg"
   }
 ];
 
