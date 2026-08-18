@@ -267,7 +267,6 @@ export default function Home() {
           ))}
         </div>
         <p className="frase-destaque">A HR Lanches continuou.</p>
-        <p className="honra">A honra e a glória ao Senhor.</p>
       </section>
 
       <div className="faixa-xadrez" aria-hidden="true" />
