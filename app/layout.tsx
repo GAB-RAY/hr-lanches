@@ -18,6 +18,11 @@ export const metadata: Metadata = {
   title: "HR Lanches - Pizzas, salgados e doces em Bangu",
   description:
     "Landing page oficial da HR Lanches com cardapio, horarios, promocao e pedidos pelo WhatsApp.",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico"
+  },
   openGraph: {
     title: "HR Lanches",
     description:
