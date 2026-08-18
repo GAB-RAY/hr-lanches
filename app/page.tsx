@@ -223,7 +223,9 @@ export default function Home() {
         </div>
 
         <div className="categoria">
-          <h3>Salgados</h3>
+          <h3>
+            Salgados <span className="categoria-complemento">(Feitos no dia)</span>
+          </h3>
           <div className="grade-produtos">{salgados.map((produto) => <ProdutoCard key={produto.nome} produto={produto} />)}</div>
         </div>
 

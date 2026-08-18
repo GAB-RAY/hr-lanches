@@ -498,6 +498,14 @@ footer img {
   padding-left: 0;
 }
 
+.categoria-complemento {
+  color: #a8a8b0;
+  font-family: inherit;
+  font-size: 0.52em;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
 .grade-produtos {
   display: grid;
   gap: 22px;
