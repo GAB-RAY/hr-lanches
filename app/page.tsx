@@ -1,5 +1,6 @@
 import Image from "next/image";
 import {
+  Camera,
   Clock,
   CreditCard,
   Flame,
@@ -248,7 +249,13 @@ export default function Home() {
       <section id="cardapio" className="secao">
         <div className="cabecalho-secao">
           <p className="etiqueta">Nossos sabores</p>
-          <h2>Cardápio</h2>
+          <div className="cardapio-titulo">
+            <h2>Cardápio</h2>
+            <p className="cardapio-fotos-reais">
+              <Camera size={18} aria-hidden="true" />
+              Fotos reais dos produtos que preparamos e servimos.
+            </p>
+          </div>
           <a className="telefone-cardapio" href={linkWhatsApp(mensagens.geral)} target="_blank" rel="noopener noreferrer">
             <MessageCircle size={14} aria-hidden="true" />
             {contato.whatsapp}
