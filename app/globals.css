@@ -747,6 +747,19 @@ td {
   grid-template-columns: minmax(0, 1fr) auto;
 }
 
+.contato-apresentacao {
+  color: #d9d9df;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 22px 0 0;
+  max-width: 760px;
+}
+
+.contato-apresentacao strong {
+  color: var(--vermelho);
+  font-weight: 900;
+}
+
 .contato ul {
   display: grid;
   gap: 13px;

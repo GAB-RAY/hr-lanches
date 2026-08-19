@@ -294,6 +294,10 @@ export default function Home() {
         <div>
           <p className="etiqueta">Contato e localização</p>
           <h2>Peça pelo WhatsApp ou retire na Rua Camarões.</h2>
+          <p className="contato-apresentacao">
+            <strong>Julia Cristina e Rogério Pontes</strong> irão atender você pelos nossos canais
+            do WhatsApp, com toda a gentileza e rapidez que você precisa e quer.
+          </p>
           <ul>
             <li><MessageCircle aria-hidden="true" /> {contato.whatsapp}</li>
             <li><Instagram aria-hidden="true" /> {contato.instagram}</li>
