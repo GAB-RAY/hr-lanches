@@ -237,7 +237,8 @@ export default function Home() {
           </BotaoWhatsApp>
           <p className="promocao-inclusos">
             <span aria-hidden="true">→</span>
-            Orégano, cebola, guardanapos, molhos em sachê e cortes personalizados inclusos!
+            Opcional: orégano, cebola, guardanapos, molhos em sachê e cortes personalizados
+            inclusos!
           </p>
         </div>
       </section>
