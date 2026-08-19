@@ -350,7 +350,15 @@ export default function Home() {
           <ul>
             <li><MessageCircle aria-hidden="true" /> {contato.whatsapp}</li>
             <li><Instagram aria-hidden="true" /> {contato.instagram}</li>
-            <li><MapPin aria-hidden="true" /> {contato.endereco}</li>
+            <li className="contato-localizacao">
+              <MapPin aria-hidden="true" />
+              <span>
+                {contato.endereco}
+                <small>
+                  Referência: Vila Kennedy, próximo à Praça Miami, à Rua Congo e à Rua Khartum.
+                </small>
+              </span>
+            </li>
             <li><CreditCard aria-hidden="true" /> Dinheiro, crédito, débito e Pix na máquina</li>
           </ul>
           <div className="acoes">

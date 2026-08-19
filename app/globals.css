@@ -919,6 +919,22 @@ td {
   flex: 0 0 auto;
 }
 
+.contato .contato-localizacao {
+  align-items: flex-start;
+}
+
+.contato-localizacao > span {
+  display: grid;
+  gap: 6px;
+}
+
+.contato-localizacao small {
+  color: var(--vermelho);
+  font-size: 0.88rem;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
 .qr-card {
   align-items: center;
   background: #101010;
