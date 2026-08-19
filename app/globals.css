@@ -294,6 +294,39 @@ footer img {
   max-width: 620px;
 }
 
+.hero-producao {
+  align-items: center;
+  border-left: 3px solid var(--vermelho);
+  display: flex;
+  gap: 12px;
+  margin-top: 22px;
+  padding: 3px 0 3px 14px;
+}
+
+.hero-producao > svg {
+  color: var(--vermelho);
+  flex: 0 0 auto;
+}
+
+.hero .hero-producao p {
+  display: grid;
+  font-size: 0.9rem;
+  gap: 2px;
+  line-height: 1.35;
+  margin: 0;
+}
+
+.hero-producao strong {
+  color: var(--branco);
+  font-family: var(--font-oswald), Arial, sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.hero-producao span {
+  color: #a8a8b0;
+}
+
 .acoes {
   display: flex;
   flex-wrap: wrap;

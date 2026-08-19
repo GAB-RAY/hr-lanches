@@ -164,6 +164,13 @@ export default function Home() {
             Pizza de 30cm, salgados de forno e bolo de pote. Tradição de família em Bangu
             desde 2009, com pedidos direto pelo WhatsApp.
           </p>
+          <div className="hero-producao">
+            <Clock size={20} aria-hidden="true" />
+            <p>
+              <strong>Produção artesanal feita no dia</strong>
+              <span>Salgados e massas de pizza</span>
+            </p>
+          </div>
           <div className="acoes">
             <BotaoWhatsApp mensagem={mensagens.geral} destaque>
               Pedir agora
