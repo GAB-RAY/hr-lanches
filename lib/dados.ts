@@ -18,7 +18,8 @@ export function linkWhatsApp(mensagem: string) {
 export const mensagens = {
   geral: "Olá! Vim pelo site da HR Lanches e gostaria de fazer um pedido.",
   promocao:
-    "Olá! Vi a promoção de 3 pizzas + refrigerante Convenção e gostaria de fazer meu pedido."
+    "Olá! Vi a promoção de 3 pizzas + refrigerante Convenção e gostaria de fazer meu pedido.",
+  feedback: "Olá! Vim pelo site da HR Lanches e gostaria de enviar um feedback."
 };
 
 export type Produto = {

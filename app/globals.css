@@ -834,6 +834,36 @@ footer svg {
   color: var(--vermelho);
 }
 
+.footer-feedback {
+  border-top: 1px solid #292929;
+  display: grid;
+  gap: 10px;
+  margin-top: 10px;
+  max-width: 900px;
+  padding-top: 22px;
+}
+
+.footer-feedback span {
+  color: #b7b7bd;
+  line-height: 1.55;
+}
+
+.footer-feedback a {
+  align-items: center;
+  color: var(--vermelho);
+  display: inline-flex;
+  font-weight: 900;
+  gap: 8px;
+  justify-content: center;
+  line-height: 1.45;
+  transition: color 180ms ease;
+}
+
+.footer-feedback a:hover,
+.footer-feedback a:focus-visible {
+  color: var(--branco);
+}
+
 @media (max-width: 900px) {
   .topo {
     grid-template-columns: 1fr auto auto;

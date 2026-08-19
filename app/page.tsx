@@ -337,6 +337,16 @@ export default function Home() {
         <p>{contato.endereco}</p>
         <p>© HR Lanches. Todos os direitos reservados.</p>
         <Store aria-hidden="true" />
+        <p className="footer-feedback">
+          <span>
+            Aceitamos feedbacks construtivos sobre atendimento, valores, qualidade e tudo o que
+            deixou a desejar.
+          </span>
+          <a href={linkWhatsApp(mensagens.feedback)} target="_blank" rel="noopener noreferrer">
+            <MessageCircle size={17} aria-hidden="true" />
+            Aqui, sua opinião importa - entre em contato pelo nosso WhatsApp.
+          </a>
+        </p>
       </footer>
     </main>
   );
