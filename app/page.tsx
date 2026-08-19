@@ -33,6 +33,8 @@ const beneficios = [
   "📍 Bangu, Rio de Janeiro"
 ];
 
+const pizzaMaisVendida = pizzas.find((produto) => produto.nome === "Calabresa") ?? pizzas[0];
+
 const linhaDoTempo = [
   {
     ano: "2009",
@@ -174,6 +176,38 @@ export default function Home() {
             <span>📍 Rio de Janeiro, RJ</span>
             <span>☎ {contato.whatsapp}</span>
             <span>🍕 Pizza 30cm</span>
+          </div>
+        </div>
+      </section>
+
+      <div className="faixa-xadrez" aria-hidden="true" />
+
+      <section className="secao destaque-dia" aria-labelledby="titulo-destaque-dia">
+        <div className="destaque-dia-imagem">
+          <Image
+            src={pizzaMaisVendida.imagem}
+            alt="Pizza de Calabresa da HR Lanches"
+            fill
+            sizes="(max-width: 900px) 100vw, 52vw"
+          />
+        </div>
+        <div className="destaque-dia-conteudo">
+          <p className="etiqueta">
+            <Flame size={15} aria-hidden="true" /> A mais vendida de hoje
+          </p>
+          <h2 id="titulo-destaque-dia">Pizza de Calabresa</h2>
+          <p className="destaque-dia-descricao">
+            Massa artesanal, molho de tomate, queijo e calabresa.
+          </p>
+          <div className="destaque-dia-opcionais">
+            <strong>Opcionais</strong>
+            <p>Orégano, cebola, guardanapos e cortes personalizados.</p>
+          </div>
+          <div className="destaque-dia-pedido">
+            <strong>{pizzaMaisVendida.preco}</strong>
+            <BotaoWhatsApp mensagem="Olá! Vim pelo site da HR Lanches e gostaria de pedir a Pizza de Calabresa." destaque>
+              Pedir Calabresa
+            </BotaoWhatsApp>
           </div>
         </div>
       </section>

@@ -377,6 +377,87 @@ footer img {
   padding: clamp(54px, 8vw, 98px) clamp(18px, 5vw, 72px);
 }
 
+.destaque-dia {
+  align-items: center;
+  background: #0b0b0b;
+  color: var(--branco);
+  display: grid;
+  gap: clamp(36px, 6vw, 96px);
+  grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+}
+
+.destaque-dia-imagem {
+  aspect-ratio: 4 / 3;
+  min-height: 420px;
+  overflow: hidden;
+  position: relative;
+}
+
+.destaque-dia-imagem::after {
+  border: 1px solid rgba(224, 24, 24, 0.72);
+  content: "";
+  inset: 18px;
+  pointer-events: none;
+  position: absolute;
+}
+
+.destaque-dia-imagem img {
+  object-fit: cover;
+  object-position: center 64%;
+}
+
+.destaque-dia-conteudo {
+  max-width: 650px;
+}
+
+.destaque-dia h2 {
+  color: var(--branco);
+  font-size: clamp(3rem, 6vw, 5.6rem);
+  line-height: 0.94;
+  margin-bottom: 22px;
+}
+
+.destaque-dia-descricao {
+  color: #e6e6ea;
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  line-height: 1.55;
+  max-width: 540px;
+}
+
+.destaque-dia-opcionais {
+  border-left: 3px solid var(--vermelho);
+  margin-top: 28px;
+  padding: 2px 0 2px 18px;
+}
+
+.destaque-dia-opcionais strong {
+  color: var(--vermelho);
+  font-family: var(--font-oswald), Arial, sans-serif;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.destaque-dia-opcionais p {
+  color: #b8b8bf;
+  line-height: 1.5;
+  margin: 5px 0 0;
+}
+
+.destaque-dia-pedido {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin-top: 32px;
+}
+
+.destaque-dia-pedido > strong {
+  color: var(--vermelho);
+  font-family: var(--font-oswald), Arial, sans-serif;
+  font-size: 2.25rem;
+  line-height: 1;
+}
+
 #cardapio {
   background:
     radial-gradient(circle at 50% 0, rgba(224, 24, 24, 0.14), transparent 28rem),
@@ -878,6 +959,7 @@ footer svg {
   }
 
   .hero,
+  .destaque-dia,
   .promocao,
   .contato,
   .atendimento {
@@ -952,6 +1034,24 @@ footer svg {
     display: block;
     overflow: hidden;
     padding: 24px 24px 58px;
+  }
+
+  .destaque-dia {
+    gap: 34px;
+  }
+
+  .destaque-dia-imagem {
+    aspect-ratio: 1 / 1;
+    min-height: 300px;
+  }
+
+  .destaque-dia h2 {
+    font-size: 2.75rem;
+  }
+
+  .destaque-dia-pedido {
+    align-items: stretch;
+    flex-direction: column;
   }
 
   .hero-conteudo {
